@@ -2,7 +2,7 @@
 VirtualBox Vagrant local development environment (PHP, NGiNX, MySQL)
 
 ## VirtualBox
-**Name your box as (required):** vagrant-ubuntu64
+**Name your box as (required):** vagrant-ubuntu64  
 **Type:** Linux
 **Version:** Ubuntu64
 **Memory Size:** 2048MB
