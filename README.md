@@ -3,18 +3,18 @@ VirtualBox Vagrant local development environment (PHP, NGiNX, MySQL)
 
 ## VirtualBox
 **Name your box as (required):** vagrant-ubuntu64  
-**Type:** Linux
-**Version:** Ubuntu64
-**Memory Size:** 2048MB
-**Virtual disk type:** VMDK
-**Fixed disk size:** 20 GB (IMHO not less than 10GB)
-**Port forwarding:** [**name:** SSH, **protocol:** TCP, **host IP:** blank, **host port:** 2222, **guest IP:** blank, **guest port:** 22]
+**Type:** Linux  
+**Version:** Ubuntu64  
+**Memory Size:** 2048MB  
+**Virtual disk type:** VMDK  
+**Fixed disk size:** 20 GB (IMHO not less than 10GB)  
+**Port forwarding:** [Name: SSH, Protocol: TCP, Host IP: blank, Host port: 2222, Guest IP: blank, Guest port: 22]
 
 ## Ubuntu 20.04 LTS installation
-Download the distro https://ubuntu.com/download/server
-Follow the installation procedure (all defaults)
-User: vagrant
-Password: vagrant
+Download the distro https://ubuntu.com/download/server  
+Follow the installation procedure (all defaults)  
+User: vagrant  
+Password: vagrant  
 
 ## Ubuntu CLI
 login with vagrant user
