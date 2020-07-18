@@ -1,7 +1,7 @@
 # vagrant-ubuntu64
 VirtualBox Vagrant local development environment (PHP, NGiNX, MySQL)
 
-###### VirtualBox
+## VirtualBox
 **Name your box as (required):** vagrant-ubuntu64
 **Type:** Linux
 **Version:** Ubuntu64
@@ -10,14 +10,14 @@ VirtualBox Vagrant local development environment (PHP, NGiNX, MySQL)
 **Fixed disk size:** 20 GB (IMHO not less than 10GB)
 **Port forwarding:** [**name:** SSH, **protocol:** TCP, **host IP:** blank, **host port:** 2222, **guest IP:** blank, **guest port:** 22]
 
-###### Ubuntu 20.04 LTS installation
-**Download the distro** https://ubuntu.com/download/server
+## Ubuntu 20.04 LTS installation
+Download the distro https://ubuntu.com/download/server
 Follow the installation procedure (all defaults)
-**User:** vagrant
-**Password:** vagrant
+User: vagrant
+Password: vagrant
 
-###### Ubuntu CLI
-**login with vagrant user**
+## Ubuntu CLI
+login with vagrant user
 ```
 $ sudo passwd root
 $ sudo visudo -f /etc/sudoers.d/vagrant
@@ -26,7 +26,7 @@ $ sudo apt update
 $ sudo apt upgrade
 $ sudo shutdown -r now
 ```
-**login again**
+login again
 ```
 $ mkdir -p /home/vagrant/.ssh
 $ chmod 0700 /home/vagrant/.ssh
@@ -36,12 +36,12 @@ $ chown -R vagrant /home/vagrant/.ssh
 sudo apt-get install -y openssh-server
 $ sudo vim /etc/ssh/sshd_config
 ```
-**uncomment the line:** AuthorizedKeysFile
+uncomment the line: AuthorizedKeysFile
 ```
 $ sudo systemctl restart ssh
 $ sudo apt-get install -y gcc build-essential linux-headers-$(uname -r)
 ```
-**on VirtualBox (top menu) on Devices->Insert Guest Additions CD Image, follow the installation procedure**
+on VirtualBox (top menu) on Devices->Insert Guest Additions CD Image, follow the installation procedure
 ```
 $ sudo mount /dev/cdrom /mnt
 $ cd /mnt
@@ -50,7 +50,7 @@ $ sudo dd if=/dev/zero of=/EMPTY bs=1M
 $ sudo rm -f /EMPTY
 $ sudo shutdown now
 ```
-**on physical machine**
+on physical machine
 ```
 $ mkdir ~/projects/vagrantBoxes && cd ~/projects/vagrantBoxes
 $ vagrant package --base vagrant-ubuntu64
