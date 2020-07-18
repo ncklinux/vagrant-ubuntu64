@@ -22,13 +22,13 @@ login with vagrant user
 $ sudo passwd root
 $ sudo visudo -f /etc/sudoers.d/vagrant
 ```
-add: vagrant ALL=(ALL) NOPASSWD:ALL
+Add the line: vagrant ALL=(ALL) NOPASSWD:ALL
 ```
 $ sudo apt update
 $ sudo apt upgrade
 $ sudo shutdown -r now
 ```
-login again
+Login again
 ```
 $ mkdir -p /home/vagrant/.ssh
 $ chmod 0700 /home/vagrant/.ssh
@@ -38,12 +38,12 @@ $ chown -R vagrant /home/vagrant/.ssh
 $ sudo apt-get install -y openssh-server
 $ sudo vim /etc/ssh/sshd_config
 ```
-uncomment the line: AuthorizedKeysFile
+Uncomment the line: AuthorizedKeysFile
 ```
 $ sudo systemctl restart ssh
 $ sudo apt-get install -y gcc build-essential linux-headers-$(uname -r)
 ```
-on VirtualBox (top menu) on Devices->Insert Guest Additions CD Image, follow the installation procedure
+On VirtualBox (top menu) on Devices->Insert Guest Additions CD Image, follow the installation procedure
 ```
 $ sudo mount /dev/cdrom /mnt
 $ cd /mnt
@@ -52,7 +52,7 @@ $ sudo dd if=/dev/zero of=/EMPTY bs=1M
 $ sudo rm -f /EMPTY
 $ sudo shutdown now
 ```
-on physical machine
+On host (physical machine)
 ```
 $ mkdir ~/projects/vagrantBoxes && cd ~/projects/vagrantBoxes
 $ vagrant package --base vagrant-ubuntu64
