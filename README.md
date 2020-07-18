@@ -17,7 +17,7 @@ User: vagrant
 Password: vagrant  
 
 ## Ubuntu CLI
-login with vagrant user
+Login with vagrant user
 ```
 $ sudo passwd root
 $ sudo visudo -f /etc/sudoers.d/vagrant
