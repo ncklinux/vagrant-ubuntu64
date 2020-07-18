@@ -10,7 +10,7 @@ VirtualBox Vagrant local development environment (PHP, NGiNX, MySQL)
 **Fixed disk size:** 20 GB (IMHO not less than 10GB)  
 **Port forwarding:** [Name: SSH, Protocol: TCP, Host IP: blank, Host port: 2222, Guest IP: blank, Guest port: 22]
 
-## Ubuntu 20.04 LTS installation
+## Ubuntu Server installation
 Download the distro https://ubuntu.com/download/server  
 Follow the installation procedure (all defaults)  
 User: vagrant  
