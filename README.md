@@ -21,7 +21,9 @@ login with vagrant user
 ```
 $ sudo passwd root
 $ sudo visudo -f /etc/sudoers.d/vagrant
-**add:** vagrant ALL=(ALL) NOPASSWD:ALL
+```
+add: vagrant ALL=(ALL) NOPASSWD:ALL
+```
 $ sudo apt update
 $ sudo apt upgrade
 $ sudo shutdown -r now
@@ -33,7 +35,7 @@ $ chmod 0700 /home/vagrant/.ssh
 $ wget --no-check-certificate https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub -O /home/vagrant/.ssh/authorized_keys
 $ chmod 0600 /home/vagrant/.ssh/authorized_keys
 $ chown -R vagrant /home/vagrant/.ssh
-sudo apt-get install -y openssh-server
+$ sudo apt-get install -y openssh-server
 $ sudo vim /etc/ssh/sshd_config
 ```
 uncomment the line: AuthorizedKeysFile
