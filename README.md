@@ -62,4 +62,11 @@ $ vagrant up
 $ vagrant ssh
 ```
 
-Have fun and happy coding!
+## Support
+For things like reporting bugs and requesting features it is best to create an issue here on GitHub. It is even better to accompany it with a Pull Request. ;-)
+
+## License
+GNU General Public License v3.0
+
+## Looking for alternatives?
+Check Docker! https://www.docker.com
