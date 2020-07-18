@@ -59,6 +59,7 @@ $ vagrant package --base vagrant-ubuntu64
 $ vagrant box add vagrant-ubuntu64 package.box
 $ git clone git@github.com:ncklinux/vagrant-ubuntu64.git
 $ vagrant up
+$ vagrant ssh
 ```
 
 Have fun and happy coding!
