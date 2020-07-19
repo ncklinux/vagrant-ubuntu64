@@ -59,7 +59,7 @@ $ mkdir ~/projects/vagrantBoxes && cd ~/projects/vagrantBoxes
 $ vagrant package --base vagrant-ubuntu64
 $ vagrant box add vagrant-ubuntu64 package.box
 $ git clone git@github.com:ncklinux/vagrant-ubuntu64.git
-$ vagrant-ubuntu64
+$ cd vagrant-ubuntu64
 $ vagrant up
 $ vagrant ssh
 ```
