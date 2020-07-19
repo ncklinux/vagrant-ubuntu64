@@ -14,7 +14,7 @@ Name | Protocol | Host IP | Host Port | Guest IP | Guest port
 SSH | TCP | blank | 2222 | blank | 22
 
 ## Ubuntu Server installation
-Download the distro https://ubuntu.com/download/server  
+Download the latest [Ubuntu Server](https://ubuntu.com/download/server)   
 Follow the installation procedure (all defaults)  
 User: vagrant  
 Password: vagrant  
@@ -74,4 +74,4 @@ For things like reporting bugs and requesting features it is best to create an i
 GNU General Public License v3.0
 
 ## Looking for alternatives?
-Check Docker! https://www.docker.com
+Check [Docker](https://www.docker.com)!
