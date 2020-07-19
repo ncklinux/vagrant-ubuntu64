@@ -68,7 +68,7 @@ $ vagrant ssh
 ```
 
 ## Support
-For things like reporting bugs and requesting features it is best to create an issue here on GitHub. It is even better to accompany it with a Pull Request. ;-)
+The above project has been tested with Ubuntu Server 20.04 LTS, for reporting bugs and requesting features it is best to create an issue, here on GitHub. It is even better to accompany it with a Pull Request. ;)
 
 ## License
 GNU General Public License v3.0
