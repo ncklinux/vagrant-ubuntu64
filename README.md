@@ -8,7 +8,11 @@ VirtualBox Vagrant local development environment (PHP, NGiNX, MySQL)
 **Memory Size:** 2048MB  
 **Virtual disk type:** VMDK  
 **Fixed disk size:** 20 GB (IMHO not less than 10GB)  
-**Port forwarding:** [Name: SSH, Protocol: TCP, Host IP: blank, Host port: 2222, Guest IP: blank, Guest port: 22]
+**Port forwarding:** [Name: SSH, Protocol: TCP, Host IP: blank, Host Port: 2222, Guest IP: blank, Guest port: 22]
+
+Name | Protocol | Host IP | Host Port | Guest IP | Guest port
+--- | --- | --- | --- | --- | ---
+SSH | TCP | blank | 2222 | blank | 22
 
 ## Ubuntu Server installation
 Download the distro https://ubuntu.com/download/server  
