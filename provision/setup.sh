@@ -31,3 +31,8 @@ sudo apt install -y mysql-server > /dev/null 2>&1
 sudo mysql -V
 systemctl is-enabled mysql
 sudo systemctl status mysql
+
+echo "Install Net Tools..."
+sudo apt install -y net-tools > /dev/null 2>&1
+echo "Netstat..."
+sudo netstat -tupln
