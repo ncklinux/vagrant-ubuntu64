@@ -43,10 +43,11 @@ Uncomment the line: AuthorizedKeysFile
 $ sudo systemctl restart ssh
 $ sudo apt-get install -y gcc build-essential linux-headers-$(uname -r)
 ```
-On VirtualBox (top menu) on Devices->Insert Guest Additions CD Image, follow the installation procedure
+On VirtualBox (top menu) click on Devices->Insert Guest Additions CD Image, then follow the installation procedure
 ```
 $ sudo mount /dev/cdrom /mnt
 $ cd /mnt
+$ ls -la
 $ sudo ./VBoxLinuxAdditions.run
 $ sudo dd if=/dev/zero of=/EMPTY bs=1M
 $ sudo rm -f /EMPTY
@@ -58,6 +59,7 @@ $ mkdir ~/projects/vagrantBoxes && cd ~/projects/vagrantBoxes
 $ vagrant package --base vagrant-ubuntu64
 $ vagrant box add vagrant-ubuntu64 package.box
 $ git clone git@github.com:ncklinux/vagrant-ubuntu64.git
+$ vagrant-ubuntu64
 $ vagrant up
 $ vagrant ssh
 ```
