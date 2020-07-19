@@ -74,4 +74,4 @@ For things like reporting bugs and requesting features it is best to create an i
 GNU General Public License v3.0
 
 ## Looking for alternatives?
-Check [Docker](https://www.docker.com)!
+Check [Docker!](https://www.docker.com)
