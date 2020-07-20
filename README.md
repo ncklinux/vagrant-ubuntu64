@@ -1,5 +1,7 @@
 # vagrant-ubuntu64
-VirtualBox Vagrant local development environment (PHP, NGiNX, MySQL)
+Vagrant local development environment with PHP, NGiNX, MySQL (LEMP stack)
+
+Download and install [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (if you don’t have them), then install [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) to extend the functionality, read the [Docs](https://www.virtualbox.org/manual/ch01.html#intro-installing).
 
 ## VirtualBox
 **Name your box as (required):** vagrant-ubuntu64  
@@ -15,9 +17,7 @@ SSH | TCP | blank | 2222 | blank | 22
 
 ## Ubuntu Server installation
 Download the latest [Ubuntu Server](https://ubuntu.com/download/server)   
-Follow the installation procedure (all defaults)  
-User: vagrant  
-Password: vagrant  
+Follow the installation process (all defaults), however, it is recommended to install OpenSSH Server. For username and password, type: vagrant  
 
 ## Ubuntu CLI
 Login with vagrant user
@@ -46,7 +46,7 @@ Uncomment the line: AuthorizedKeysFile
 $ sudo systemctl restart ssh
 $ sudo apt-get install -y gcc build-essential linux-headers-$(uname -r)
 ```
-On VirtualBox (top menu) click on Devices->Insert Guest Additions CD Image, then follow the installation procedure
+On VirtualBox (top menu) click on "Devices" and then select "Insert Guest Additions CD Image", follow the installation process
 ```
 $ sudo mount /dev/cdrom /mnt
 $ cd /mnt
@@ -68,10 +68,10 @@ $ vagrant ssh
 ```
 
 ## Support
-The above project has been tested with Ubuntu Server 20.04 LTS, for reporting bugs and requesting features it is best to create an issue, here on GitHub. It is even better to accompany it with a Pull Request. ;)
+The above project has been tested with Ubuntu Server 20.04 LTS, for reporting bugs and requesting features it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
 
 ## License
 GNU General Public License v3.0
 
-## Looking for alternatives?
-Check [Docker!](https://www.docker.com)
+## Alternative to Vagrant?
+You could use [Docker!](https://www.docker.com)
