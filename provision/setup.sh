@@ -8,11 +8,6 @@ echo "System updates..."
 sudo apt update > /dev/null 2>&1
 sudo apt -y upgrade > /dev/null 2>&1
 
-echo "Stop and disable apache2..."
-sudo systemctl stop apache2
-sudo systemctl disable apache2
-sudo systemctl is-enabled apache2
-
 echo "Installing packages..."
 
 echo "Install Git..."
@@ -36,6 +31,11 @@ sudo apt install -y mysql-server > /dev/null 2>&1
 sudo mysql -V
 systemctl is-enabled mysql
 sudo systemctl status mysql
+
+echo "Stop and disable apache2..."
+sudo systemctl stop apache2
+sudo systemctl disable apache2
+sudo systemctl is-enabled apache2
 
 echo "Install Net Tools..."
 sudo apt install -y net-tools > /dev/null 2>&1
