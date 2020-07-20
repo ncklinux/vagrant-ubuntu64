@@ -42,8 +42,8 @@ sudo apt install -y net-tools > /dev/null 2>&1
 echo "Netstat..."
 sudo netstat -tupln
 
-# Test index.html
-echo "Test index.html..."
+# Replace index.html
+echo "The standard index.html replaced..."
 INDEXTESTTEXT="HTML5 index test page"
 INDEXTESTHTML=$(cat <<EOF
 <!doctype html>
@@ -61,3 +61,4 @@ INDEXTESTHTML=$(cat <<EOF
 EOF
 )
 echo "${INDEXTESTHTML}" > /var/www/html/index.html
+echo "URL: http://localhost:8080"
