@@ -8,6 +8,10 @@ echo "System updates..."
 sudo apt update > /dev/null 2>&1
 sudo apt -y upgrade > /dev/null 2>&1
 
+echo "Stop and disable apache2..."
+sudo systemctl stop apache2
+sudo systemctl disable apache2
+
 echo "Installing packages..."
 
 echo "Install Git..."
