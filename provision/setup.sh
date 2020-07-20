@@ -32,6 +32,11 @@ sudo mysql -V
 systemctl is-enabled mysql
 sudo systemctl status mysql
 
+echo "Stop and disable apache2..."
+sudo systemctl stop apache2
+sudo systemctl disable apache2
+sudo systemctl is-enabled apache2
+
 echo "Install Net Tools..."
 sudo apt install -y net-tools > /dev/null 2>&1
 echo "Netstat..."
