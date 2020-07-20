@@ -41,3 +41,23 @@ echo "Install Net Tools..."
 sudo apt install -y net-tools > /dev/null 2>&1
 echo "Netstat..."
 sudo netstat -tupln
+
+# Test index.html
+echo "Test index.html..."
+INDEXTESTTEXT="HTML5 index test page"
+INDEXTESTHTML=$(cat <<EOF
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>${INDEXTESTTEXT}</title>
+  <meta name="description" content="${INDEXTESTTEXT}">
+  <meta name="author" content="vagrant">
+</head>
+<body>
+  <h1>${INDEXTESTTEXT}</h1>
+</body>
+</html>
+EOF
+)
+echo "${INDEXTESTHTML}" > /var/www/html/index.html
