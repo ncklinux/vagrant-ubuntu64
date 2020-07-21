@@ -8,12 +8,6 @@ echo "System updates..."
 sudo apt update > /dev/null 2>&1
 sudo apt -y upgrade > /dev/null 2>&1
 
-echo "Installing packages..."
-
-echo "Install Git..."
-sudo apt install -y git > /dev/null 2>&1
-sudo git --version
-
 echo "Install NGiNX..."
 sudo apt install -y nginx > /dev/null 2>&1
 sudo nginx -v
