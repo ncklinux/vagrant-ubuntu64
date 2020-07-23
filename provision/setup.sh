@@ -15,7 +15,7 @@ sudo systemctl is-enabled nginx
 sudo systemctl status nginx
 
 echo "Install PHP..."
-sudo apt install -y php php-cli php-fpm php-json php-pdo php-mysql php-zip php-gd  php-mbstring php-curl php-xml php-pear php-bcmath > /dev/null 2>&1
+sudo apt install -y php php-cli php-fpm php-json php-pdo php-mysql php-zip php-gd  php-mbstring php-curl php-xml php-pear php-bcmath php-imagick > /dev/null 2>&1
 sudo php --version
 sudo systemctl is-enabled php$(php -v | head -n 1 | cut -d " " -f 2 | cut -f1-2 -d".")-fpm
 sudo systemctl status php$(php -v | head -n 1 | cut -d " " -f 2 | cut -f1-2 -d".")-fpm
@@ -31,8 +31,9 @@ sudo systemctl stop apache2
 sudo systemctl disable apache2
 sudo systemctl is-enabled apache2
 
-echo "Install Net Tools..."
-sudo apt install -y net-tools > /dev/null 2>&1
+echo "Install tools..."
+sudo apt install -y net-tools mytop > /dev/null 2>&1
+
 echo "Netstat..."
 sudo netstat -tupln
 
