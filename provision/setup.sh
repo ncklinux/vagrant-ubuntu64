@@ -25,6 +25,8 @@ sudo apt install -y mysql-server > /dev/null 2>&1
 sudo mysql -V
 systemctl is-enabled mysql
 sudo systemctl status mysql
+sudo mysql -u root -pvagrant -e "CREATE USER 'vagrant'@'localhost' IDENTIFIED BY 'vagrant';"
+sudo mysql -u root -pvagrant -e "GRANT ALL PRIVILEGES ON * . * TO 'vagrant'@'localhost';"
 
 echo "Stop and disable apache2..."
 sudo systemctl stop apache2
