@@ -27,6 +27,8 @@ systemctl is-enabled mysql
 sudo systemctl status mysql
 sudo mysql -u root -pvagrant -e "CREATE USER 'vagrant'@'localhost' IDENTIFIED BY 'vagrant';"
 sudo mysql -u root -pvagrant -e "GRANT ALL PRIVILEGES ON * . * TO 'vagrant'@'localhost';"
+sudo mysql -u root -pvagrant -e "FLUSH PRIVILEGES;"
+echo "Connect in MySQL with vagrant user: mysql -u vagrant -p"
 
 echo "Stop and disable apache2..."
 sudo systemctl stop apache2
