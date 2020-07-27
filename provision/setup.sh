@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Single quotes for special-character passwords
-PASSWORD='vagrant'
+USERANDPASSWORD='vagrant'
 PUBLICDIRECTORY='html'
 
 echo "System updates..."
@@ -25,10 +25,10 @@ sudo apt install -y mysql-server > /dev/null 2>&1
 sudo mysql -V
 systemctl is-enabled mysql
 sudo systemctl status mysql
-sudo mysql -u root -pvagrant -e "CREATE USER 'vagrant'@'localhost' IDENTIFIED BY 'vagrant';"
-sudo mysql -u root -pvagrant -e "GRANT ALL PRIVILEGES ON * . * TO 'vagrant'@'localhost';"
+sudo mysql -u root -pvagrant -e "CREATE USER '${USERANDPASSWORD}'@'localhost' IDENTIFIED BY 'vagrant';"
+sudo mysql -u root -pvagrant -e "GRANT ALL PRIVILEGES ON * . * TO '${USERANDPASSWORD}'@'localhost';"
 sudo mysql -u root -pvagrant -e "FLUSH PRIVILEGES;"
-echo "Connect in MySQL with vagrant user: mysql -u vagrant -p"
+echo "Connect in MySQL with ${USERANDPASSWORD} user: mysql -u ${USERANDPASSWORD} -p"
 
 echo "Stop and disable apache2..."
 sudo systemctl stop apache2
