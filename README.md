@@ -66,6 +66,10 @@ $ cd vagrant-ubuntu64
 $ vagrant up
 $ vagrant ssh
 ```
+MySQL CLI (password vagrant)
+```
+mysql -u vagrant -p
+```
 
 ## Support
 The above project has been tested with Ubuntu Server 20.04 LTS, for reporting bugs and requesting features it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
