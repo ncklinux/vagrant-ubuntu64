@@ -3,7 +3,9 @@ Vagrant local development environment with PHP, NGiNX, MySQL (LEMP stack)
 
 Download and install [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (if you don’t have them), then install [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) to extend the functionality, read the [Docs](https://www.virtualbox.org/manual/ch01.html#intro-installing).
 
-![Image of Yaktocat](./media/vagrant_screenshot.png)
+If you are using [Arch Linux](https://www.archlinux.org/) follow the wiki pages [Vagrant](https://wiki.archlinux.org/index.php/Vagrant) and [VirtualBox](https://wiki.archlinux.org/index.php/VirtualBox).
+
+![Screenshot](./media/vagrant_screenshot.png)
 
 ## VirtualBox
 **Name your box as (required):** vagrant-ubuntu64  
@@ -74,7 +76,7 @@ mysql -u vagrant -p
 ```
 
 ## Support
-The above project has been tested with Ubuntu Server 20.04 LTS, for reporting bugs and requesting features it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
+The above project (Ubuntu Server 20.04 LTS LEMP development environment) has been tested/hosted on [Arch Linux](https://www.archlinux.org/) but there are no differences between distributions (only the Vagrant installation process differs), for reporting bugs and requesting features it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
 
 ## License
 GNU General Public License v3.0
