@@ -3,6 +3,8 @@ Vagrant local development environment with PHP, NGiNX, MySQL (LEMP stack)
 
 Download and install [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (if you don’t have them), then install [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) to extend the functionality, read the [Docs](https://www.virtualbox.org/manual/ch01.html#intro-installing).
 
+![Image of Yaktocat](./media/vagrant_screenshot.png)
+
 ## VirtualBox
 **Name your box as (required):** vagrant-ubuntu64  
 **Type:** Linux  
