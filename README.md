@@ -76,7 +76,7 @@ mysql -u vagrant -p
 ```
 
 ## Support
-The above project (Ubuntu Server LEMP dev environment) has been tested/hosted on [Arch Linux](https://www.archlinux.org/) but there are no differences between distributions (only the Vagrant/VirtualBox installation process differs), for reporting bugs and requesting features it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
+The above project (Ubuntu Server LEMP environment) has been tested/hosted on [Arch Linux](https://www.archlinux.org/) but there are no differences between distributions (only the Vagrant/VirtualBox installation process differs e.g. on Arch Linux use Pacman), for reporting bugs, requesting features or better methods, it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
 
 ## License
 GNU General Public License v3.0
