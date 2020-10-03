@@ -72,9 +72,15 @@ $ vagrant ssh
 ```
 MySQL CLI (password vagrant)
 ```
-mysql -u vagrant -p
+$ mysql -u vagrant -p
 ```
-
+Stop, destroy and remove the box
+```
+$ vagrant halt
+$ vagrant destroy
+$ vagrant box list
+$ vagrant box remove vagrant-ubuntu64
+```
 ## Support
 The above project (Ubuntu Server LEMP environment) has been tested/hosted on [Arch Linux](https://www.archlinux.org/) but there are no differences between distributions (only the Vagrant/VirtualBox installation process differs e.g. Arch Linux provides Pacman, Ubuntu Apt etc), for reporting bugs, requesting features or better methods, it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
 
