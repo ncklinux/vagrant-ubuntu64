@@ -52,11 +52,11 @@ Vagrant.configure("2") do |config|
   # Install git, zsh and Oh-My-ZSH
   config.vm.provision :shell, inline: "apt -y install git"
   config.vm.provision :shell, inline: "apt -y install zsh"
-  config.vm.provision :shell, privileged: false,
-    inline: "git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh"
-  config.vm.provision :shell, privileged: false,
-    inline: "cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc"
+  config.vm.provision :shell, privileged: false, inline: "git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh"
+  config.vm.provision :shell, privileged: false, inline: "cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc"
   config.vm.provision :shell, inline: "chsh -s /bin/zsh vagrant"
+  config.vm.provision :shell, inline: "curl -sL https://deb.nodesource.com/setup_18.x | bash - && apt -y install nodejs"
+  config.vm.provision :shell, privileged: false, inline: "node -v && npm -v"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
