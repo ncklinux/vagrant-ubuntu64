@@ -14,8 +14,8 @@ If you are using [Arch Linux](https://www.archlinux.org/) follow the wiki pages 
 **Type:** Linux  
 **Version:** Ubuntu64  
 **Memory Size:** 2048MB  
-**Virtual disk type:** VMDK  
-**Fixed disk size:** 20 GB (IMHO not less than 10GB)  
+**Virtual disk type:** VMDK (Pre-allocate Full Size)  
+**Fixed disk size:** 20 GB (IMHO not less than 15GB)  
 **Port forwarding:**
 Name | Protocol | Host IP | Host Port | Guest IP | Guest port
 --- | --- | --- | --- | --- | ---
@@ -24,11 +24,13 @@ SSH | TCP | blank | 2222 | blank | 22
 ## Ubuntu Server installation
 
 Download the latest [Ubuntu Server](https://ubuntu.com/download/server)  
-Follow the installation process (all defaults), however, it is recommended to install OpenSSH Server. For username and password, type: vagrant
+Follow the installation process (all defaults), however, it is recommended to install OpenSSH Server. For name, server name, username and password, type: vagrant (in all input fields in following screen below):
+
+![Screenshot](./media/profile_setup.png)
 
 ## Ubuntu CLI
 
-Login with vagrant user
+When the installation is complete, run the box and login with the vagrant user
 
 ```
 $ sudo passwd root
@@ -69,8 +71,24 @@ $ sudo mount /dev/cdrom /mnt
 $ cd /mnt
 $ ls -la
 $ sudo ./VBoxLinuxAdditions.run
+$ sudo shutdown -r now
+```
+
+If the Guest Additions CD Image cannot be installed or if an error occurs
+
+```
+$ sudo add-apt-repository multiverse
+$ sudo apt update
+$ sudo apt install virtualbox-guest-utils virtualbox-guest-x11
+$ sudo shutdown -r now
+```
+
+Then write a sparse file, with zeros in all blank spaces on the volume (make your disk as small as possible)
+
+```
 $ sudo dd if=/dev/zero of=/EMPTY bs=1M
 $ sudo rm -f /EMPTY
+$ cat /dev/null > ~/.bash_history && history -c && exit;
 $ sudo shutdown now
 ```
 
