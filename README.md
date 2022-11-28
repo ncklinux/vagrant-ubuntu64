@@ -23,7 +23,7 @@ SSH | TCP | blank | 2222 | blank | 22
 
 ## Ubuntu Server installation
 
-Download the latest [Ubuntu Server](https://ubuntu.com/download/server)  
+Download the latest [Ubuntu Server](https://ubuntu.com/download/server) iso.  
 Follow the installation process (all defaults), however, it is recommended to install OpenSSH Server. For name, server name, username and password, type: vagrant (in all input fields in following screen below):
 
 ![Screenshot](./media/profile_setup.png)
@@ -129,7 +129,7 @@ The above project (Ubuntu Server LEMP environment) has been tested/hosted on [Ar
 
 GNU General Public License v3.0
 
-## Systems, tools and programming languages
+## Powered by
 
 <img height="33" style="margin-right: 3px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unix/unix-original.svg" /><img height="33" style="margin-right: 3px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /><img height="33" style="margin-right: 3px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" /><img height="33" style="margin-right: 3px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original-wordmark.svg" /><img height="33" style="margin-right: 3px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vagrant/vagrant-original.svg" /><img height="33" style="margin-right: 3px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /><img height="33" style="margin-right: 3px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" /><img height="33" style="margin-right: 3px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" /><img height="33" style="margin-right: 3px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" />
 
