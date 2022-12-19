@@ -8,7 +8,7 @@ If you are using [Arch Linux](https://www.archlinux.org/) follow the wiki pages 
 
 ## Motivation
 
-As a Vagrant Power-User I had fun installing and running multiple VMs simultaneously (with static IPv4 IPs on the 192.168.1.\* subnet and also with IPv6), I've done this hundreds of times with Puppet (with Master and Agent nodes), as well as Ansible. In bigging I mostly used pre-built Vagrant Boxes from [Vagrant Cloud](https://app.vagrantup.com/boxes/search) for convenience. It is often very useful and necessary (for administration/networking and programming purposes) to know what is going on "under the hood", because it gives you, way better insight into things you can't see at first glance :wink: this is what motivated me to create my own Box.
+As a Vagrant Power-User I had fun installing and running multiple VMs simultaneously (with static IPv4 IPs on the 192.168.1.\* subnet and also with IPv6), I've done this hundreds of times with Puppet (with Master and Agent nodes), as well as Ansible. In bigging I mostly used pre-built Vagrant Boxes from [Vagrant Cloud](https://app.vagrantup.com/boxes/search) for convenience. It is often very useful and necessary (for administration/networking and programming purposes) to know what is going on "under the hood", because it gives you, way better insight into things that you can't see at first glance :wink: this is what motivated me to create my own Box.
 
 ![Screenshot](./media/vagrant_screenshot.png)
 
