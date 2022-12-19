@@ -6,16 +6,20 @@ Download and install [Vagrant](https://www.vagrantup.com/downloads.html) and [Vi
 
 If you are using [Arch Linux](https://www.archlinux.org/) follow the wiki pages [Vagrant](https://wiki.archlinux.org/index.php/Vagrant) and [VirtualBox](https://wiki.archlinux.org/index.php/VirtualBox).
 
+## Motivation
+
+As a Vagrant Power-User I had fun installing and running multiple VMs simultaneously (with static IPv4 IPs on the 192.168.1.\* subnet and also with IPv6), I've done this hundreds of times with Puppet (with Master and Agent nodes), as well as Ansible. In bigging I mostly used pre-built Vagrant Boxes from [Vagrant Cloud](https://app.vagrantup.com/boxes/search) for convenience. It is often very useful and necessary (for administration/networking and programming purposes) to know what is going on "under the hood", because it gives you, way better insight into things you can't see at first glance :wink: this is what motivated me to create my own Box.
+
 ![Screenshot](./media/vagrant_screenshot.png)
 
 ## VirtualBox
 
-**Name your box as (required):** vagrant-ubuntu64  
-**Type:** Linux  
-**Version:** Ubuntu64  
-**Memory Size:** 2048MB  
-**Virtual disk type:** VMDK (Pre-allocate Full Size)  
-**Fixed disk size:** 20 GB (IMHO not less than 15GB)  
+**Name your box as (required):** `vagrant-ubuntu64`  
+**Type:** `Linux`  
+**Version:** `Ubuntu64`  
+**Memory Size:** `2048MB`  
+**Virtual disk type:** `VMDK (Pre-allocate Full Size)`  
+**Fixed disk size:** `20 GB` (IMHO not less than 15GB)  
 **Port forwarding:**
 Name | Protocol | Host IP | Host Port | Guest IP | Guest port
 --- | --- | --- | --- | --- | ---
@@ -104,7 +108,7 @@ $ vagrant up
 $ vagrant ssh
 ```
 
-MySQL CLI (password vagrant)
+MySQL CLI (password `vagrant`)
 
 ```
 $ mysql -u vagrant -p
