@@ -123,6 +123,9 @@ $ vagrant box list
 $ vagrant box remove vagrant-ubuntu64
 ```
 
+## Plugins
+Vagrant supports many great features out of the box to help you get your environments up and running. However, you may need to modify or add additional functionality to Vagrant. This is where [Vagrant Plugins](https://github.com/hashicorp/vagrant/wiki/Available-Vagrant-Plugins) come in handy!
+
 ## Support
 
 The above project (Ubuntu Server LEMP environment) has been tested/hosted on [Arch Linux](https://www.archlinux.org/) but there are no differences between distributions (only the Vagrant/VirtualBox installation process differs e.g. Arch Linux provides Pacman, Ubuntu Apt etc), for reporting bugs, requesting features or better methods, it's best to open an [issue](https://github.com/ncklinux/vagrant-ubuntu64/issues/new). It's even better to accompany it with a Pull Request. ;)
