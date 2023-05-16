@@ -78,7 +78,7 @@ $ sudo ./VBoxLinuxAdditions.run
 $ sudo shutdown -r now
 ```
 
-If the Guest Additions CD Image cannot be installed or if an error occurs
+If the Guest Additions CD image cannot be installed or if an error occurs, execute the following
 
 ```
 $ sudo add-apt-repository multiverse
@@ -116,14 +116,19 @@ $ mysql -u vagrant -p
 
 Stop, destroy and remove the box
 
-```
+```bash
 $ vagrant halt
 $ vagrant destroy
 $ vagrant box list
 $ vagrant box remove vagrant-ubuntu64
+
+# Get the state of all active Vagrant environments on the system for the currently logged in user and discard old boxes
+$ vagrant global-status
+$ vagrant global-status --prune
 ```
 
 ## Plugins
+
 Vagrant supports many great features out of the box to help you get your environments up and running. However, you may need to modify or add additional functionality to Vagrant. This is where [Vagrant Plugins](https://github.com/hashicorp/vagrant/wiki/Available-Vagrant-Plugins) come in handy!
 
 ## Support
